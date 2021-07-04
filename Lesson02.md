@@ -1,8 +1,8 @@
 # Bài 2: Vá Lỗ Hổng Bảo Mật
 
 - [x] Nhận dữ liệu
-- [x] Lưu dữ liệu: biến, kiểu dữ liệu, các hàm kiểm tra, chuyển kiểu dữ liệu
-- [x] Câu điều kiện: cú pháp, phép so sánh, toán tử kết hợp, rẽ nhánh
+- [x] [Lưu dữ liệu](#l%C6%B0u-d%E1%BB%AF-li%E1%BB%87u): biến, kiểu dữ liệu, các hàm kiểm tra, chuyển kiểu dữ liệu
+- [x] [Câu điều kiện](#c%C3%A2u-%C4%91i%E1%BB%81u-ki%E1%BB%87n): cú pháp, phép so sánh, toán tử kết hợp, rẽ nhánh
 - [ ] Vòng lặp
 
 ## Tài nguyên
