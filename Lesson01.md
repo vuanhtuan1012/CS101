@@ -5,11 +5,11 @@
 
 ## Tài nguyên
 
-- Slide: [[Lesson 1] Final slide - Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSwCVVx54yw5HrxqYj_-6y70_fqsqqa385gr_fFpH09dbnjx10i2eqoMtMBZrhFItXb8U6pDytEzYgr/embed?start=false&loop=false&delayms=3000&slide=id.p)
-- Hướng dẫn cài Thonny: [CS101_Thonny Installation_LMS](https://docs.google.com/document/d/e/2PACX-1vShSM83TtpgfeImrq5u6O9ZImebCfVi92YapPaVdkBRJyXpzjUAWN-R4gct1tQlhS1CVDn0fOSpeAlm/pub?embedded=false)
-- Flashcard [[Lesson 1] Common Mistake + Flashcard - Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTJqkJPXThCRTVx3JtgthdF0F8XR01SpqWjllIlUSh3o48Gt7vrFY8DCtX6twJFpHzdlgjy_INS9q6u/embed?start=false&slide=id.gb2c15e966d_0_0)
-- Python IDE online: [Python Online Compiler & Interpreter - Replit](https://replit.com/languages/python3)
-- Binary Light Bulbs: https://scratch.mit.edu/projects/446851585/
+- [[Lesson 1] Final slide](https://docs.google.com/presentation/d/e/2PACX-1vSwCVVx54yw5HrxqYj_-6y70_fqsqqa385gr_fFpH09dbnjx10i2eqoMtMBZrhFItXb8U6pDytEzYgr/embed?start=false&loop=false&delayms=3000&slide=id.p)
+- [CS101_Thonny Installation_LMS](https://docs.google.com/document/d/e/2PACX-1vShSM83TtpgfeImrq5u6O9ZImebCfVi92YapPaVdkBRJyXpzjUAWN-R4gct1tQlhS1CVDn0fOSpeAlm/pub?embedded=false)
+- [[Lesson 1] Common Mistake + Flashcard](https://docs.google.com/presentation/d/e/2PACX-1vTJqkJPXThCRTVx3JtgthdF0F8XR01SpqWjllIlUSh3o48Gt7vrFY8DCtX6twJFpHzdlgjy_INS9q6u/embed?start=false&slide=id.gb2c15e966d_0_0)
+- [Python Online Compiler & Interpreter - Replit](https://replit.com/languages/python3)
+- [Binary Light Bulbs](https://scratch.mit.edu/projects/446851585/)
 
 ## Số nhị phân
 
