@@ -3,7 +3,7 @@
 - [x] Nhận dữ liệu
 - [x] [Lưu dữ liệu](#l%C6%B0u-d%E1%BB%AF-li%E1%BB%87u): biến, kiểu dữ liệu, các hàm kiểm tra, chuyển kiểu dữ liệu
 - [x] [Câu điều kiện](#c%C3%A2u-%C4%91i%E1%BB%81u-ki%E1%BB%87n): cú pháp, phép so sánh, toán tử kết hợp, rẽ nhánh
-- [ ] Vòng lặp
+- [x] Vòng lặp
 
 ## Tài nguyên
 
@@ -132,4 +132,37 @@ else:
 	print("học sinh trung bình")
 ```
 
-## Vòng lặp
+## Vòng lặp `while`
+- Cú pháp
+```Python
+while điều_kiện_lặp:
+	mã_lệnh_1_nếu_điều_kiện_lặp_đúng
+	mã_lệnh_2_nếu_điều_kiện_lặp_đúng
+```
+
+**Chú ý:** nếu điều kiện lặp luôn đúng, chương trình sẽ chạy không dừng. Vì vậy, trong vòng lặp luôn phải có lệnh để cập nhật điều kiện lặp.
+
+```Python
+# in ra 5 dòng Hello World
+counter = 0
+while counter < 5:
+	print("Hello World!")
+	counter += 1
+```
+
+- `counter += 1`: là cách viết ngắn gọn của `counter = counter + 1`
+
+**Câu lệnh `break`**: có tác dụng thoát ngay ra khỏi vòng lặp mà không cần quan tâm đến điều kiện lặp.
+
+```Python
+# chương trình dừng sau 3 lần nhập mật khẩu sai
+counter = 0
+while counter < 3:
+	pwd = input("Mật khẩu của bạn là gì? ")
+	if pwd == "1101" or pwd == "0512":
+		print("Welcome")
+		break
+	else:
+		print("Wrong password!")
+		counter += 1
+```
