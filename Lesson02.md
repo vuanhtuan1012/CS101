@@ -3,7 +3,7 @@
 - [x] Nhận dữ liệu
 - [x] [Lưu dữ liệu](#l%C6%B0u-d%E1%BB%AF-li%E1%BB%87u): biến, kiểu dữ liệu, các hàm kiểm tra, chuyển kiểu dữ liệu
 - [x] [Câu điều kiện](#c%C3%A2u-%C4%91i%E1%BB%81u-ki%E1%BB%87n): cú pháp, phép so sánh, toán tử kết hợp, rẽ nhánh
-- [x] [Vòng lặp `while`](#v%C3%B2ng-l%E1%BA%B7p-while)
+- [x] [Vòng lặp `while`](#v%C3%B2ng-l%E1%BA%B7p-while): cú pháp, toán tử `+=`, câu lệnh `break`, các toán tử mở rộng
 
 ## Tài nguyên
 
@@ -165,4 +165,15 @@ while counter < 3:
 	else:
 		print("Wrong password!")
 		counter += 1
+```
+
+Các toán tử mở rộng:
+- toán tử `%`: là phép chia lấy số dư. `a % b` trả về kết quả số `m` là số dư của phép chia `a` cho `b`.
+- toán tử `//`: là phép chia lấy phần nguyên của thương. `a // b` trả về kết quả số `m` là thương (lấy phần nguyên) của phép chia `a` cho `b`.
+- toán tử `**`: là phép luỹ thừa. `a ** b` trả về kết quả số `m` là luỹ thừa của cơ số `a` với số mũ `b`.
+
+```Python
+5 % 3 # return 2
+5 // 3 # return 1
+5 ** 3 # return 125
 ```
