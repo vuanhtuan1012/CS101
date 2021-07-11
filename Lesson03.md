@@ -1,8 +1,8 @@
 # Bài 3: Vaccine Nào Tốt Nhất
 
-- [x] Mảng (Array)
-- [x] Mảng hai chiều (2D array)
-- [x] Vòng lặp `for`
+- [x] [Mảng (Array)](#m%E1%BA%A3ng-array)
+- [x] [Mảng hai chiều (2D array)](#m%E1%BA%A3ng-hai-chi%E1%BB%81u-2d-array)
+- [x] [Vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for)
 
 ## Tài nguyên
 
