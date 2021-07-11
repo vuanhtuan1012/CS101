@@ -2,7 +2,7 @@
 
 - [x] [Bài 1: Siêu Máy Tính](Lesson01.md)
 - [x] [Bài 2: Vá Lỗ Hổng Bảo Mật](Lesson02.md)
-- [ ] Bài 3: Tìm Vacxin Tốt Nhất
+- [ ] [Bài 3: Tìm Vacxin Tốt Nhất](Lesson03.md)
 - [ ] Bài 4: Cỗ Máy Tìm Kiếm
 - [ ] Bài 5: Bài Học Ngoại Khoá
 - [ ] Bài 6: Ai Sẽ Nhận Vacxin Trước
