@@ -56,15 +56,15 @@ else:
 
 # Hoc sinh lap trinh tu dong nay tro xuong
 # print(computer_choice)
-nguoi_choi = input("Ban ra gi? ")
-if nguoi_choi == computer_choice:
+gamer_choice = input("Ban ra gi? ")
+if gamer_choice == computer_choice:
     print("Hoa roi!")
-elif nguoi_choi == "keo":
+elif gamer_choice == "keo":
     if computer_choice == "bua":
         print("Ban da thua!")
     else:
         print("Ban da thang!")
-elif nguoi_choi == "bua":
+elif gamer_choice == "bua":
     if computer_choice == "bao":
         print("Ban da thua!")
     else:
