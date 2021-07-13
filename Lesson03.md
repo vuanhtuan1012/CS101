@@ -3,7 +3,7 @@
 - [x] [Mảng (Array)](#m%E1%BA%A3ng-array): khái niệm, khởi tạo, truy cập, phương thức và hàm.
 - [x] [Mảng hai chiều (2D array)](#m%E1%BA%A3ng-hai-chi%E1%BB%81u-2d-array)
 - [x] [Vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for): cấu trúc, thực thi
-- [x] Thuật toán tính tổng: ý tưởng, thuật toán, mở rộng tính trung bình cộng
+- [x] [Thuật toán tính tổng](#thu%E1%BA%ADt-to%C3%A1n-t%C3%ADnh-t%E1%BB%95ng): ý tưởng, thuật toán, mở rộng tính trung bình cộng
 - [x] [Thuật toán tìm số lớn nhất](#thu%E1%BA%ADt-to%C3%A1n-t%C3%ACm-s%E1%BB%91-l%E1%BB%9Bn-nh%E1%BA%A5t): ý tưởng, thuật toán sử dụng vòng lặp `for`, thuật toán sử dụng vòng lặp `while`.
 
 ## Tài nguyên
