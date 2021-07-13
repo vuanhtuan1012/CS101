@@ -50,7 +50,7 @@ mang[2] # return 1.0
 mang[3] # return False
 mang[4] # return lỗi IndexError
 ```
-- Cách 2: sử dụng vòng lặp `for`: xem phần vòng lặp `for`.
+- Cách 2: sử dụng vòng lặp `for`: xem phần [vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for).
 
 ### Phương thức và Hàm
 
@@ -62,17 +62,14 @@ mang[4] # return lỗi IndexError
 	- Cú pháp: `len(tên_mảng)`.
 	- Ví dụ: `len(mang)` trả về 4 là tổng số phần tử trong mảng `mang`.
 
-### Ví dụ
 ```Python
-trials = [80, 85, 87] # khởi tạo mảng tên trials chứa 3 phần tử
-len(trials) # return 3
-print(trials[0]) # in ra giá trị của phần tử đầu tiên
-print(trials[3]) # lỗi IndexError
-trials.append(82) # thêm số nguyên 82 vào cuối mảng
-trials.append(8.5) # thêm số thực 8.5 vào cuối mảng
-trials.append("hello world") # thêm chuỗi "hello world" vào cuối mảng
-trials.append(True) # thêm giá trị logic True vào cuối mảng
-len(trials) # return 7
+mang = [] # khởi tạo mảng trống
+len(mang) # return 0
+mang.append(82) # thêm số nguyên 82 vào cuối mảng
+mang.append(8.5) # thêm số thực 8.5 vào cuối mảng
+mang.append("hello world") # thêm chuỗi "hello world" vào cuối mảng
+mang.append(True) # thêm giá trị logic True vào cuối mảng
+len(mang) # return 4
 ```
 
 ## Mảng hai chiều (2D Array)
