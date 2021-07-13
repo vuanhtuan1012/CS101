@@ -2,8 +2,8 @@
 
 - [x] [Mảng (Array)](#m%E1%BA%A3ng-array): khái niệm, khởi tạo, truy cập, phương thức và hàm.
 - [x] [Mảng hai chiều (2D array)](#m%E1%BA%A3ng-hai-chi%E1%BB%81u-2d-array)
-- [x] [Vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for): cấu trúc, thực thi
-- [x] [Thuật toán tính tổng](#thu%E1%BA%ADt-to%C3%A1n-t%C3%ADnh-t%E1%BB%95ng): ý tưởng, thuật toán, mở rộng tính trung bình cộng
+- [x] [Vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for): cấu trúc, thực thi.
+- [x] [Thuật toán tính tổng](#thu%E1%BA%ADt-to%C3%A1n-t%C3%ADnh-t%E1%BB%95ng): ý tưởng, thuật toán, mở rộng tính trung bình cộng.
 - [x] [Thuật toán tìm số lớn nhất](#thu%E1%BA%ADt-to%C3%A1n-t%C3%ACm-s%E1%BB%91-l%E1%BB%9Bn-nh%E1%BA%A5t): ý tưởng, thuật toán sử dụng vòng lặp `for`, thuật toán sử dụng vòng lặp `while`.
 
 ## Tài nguyên
@@ -48,7 +48,7 @@ mang[0] # return 2
 mang[1] # return "Chi"
 mang[2] # return 1.0
 mang[3] # return False
-mang[4] # return lỗi IndexError
+mang[4] # error IndexError
 ```
 - Cách 2: sử dụng vòng lặp `for`: xem phần [vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for).
 
@@ -89,7 +89,7 @@ print(len(data)) # return 4
 
 ## Vòng lặp `for`
 
-Vòng lặp `for` dùng để duyệt qua tất cả các phần tử của mảng mà không cần biết đến số thứ tự của chúng.
+Vòng lặp `for` dùng để duyệt qua tất cả các phần tử của mảng mà không cần đưa vào số thứ tự của chúng.
 - Cấu trúc:
 ```Python
 for phần_tử in tên_mảng:
@@ -105,7 +105,7 @@ for phan_tu in mang:
 	print(phan_tu)
 ```
 
-Vòng lặp `for` cũng được dùng để **duyệt qua các kí tự của một chuỗi kí tự**.
+**Vòng lặp `for` cũng được dùng để duyệt qua các kí tự của một chuỗi kí tự**.
 ```Python
 ho_ten = "Vũ Khánh Chi"
 for ki_tu in ho_ten:
