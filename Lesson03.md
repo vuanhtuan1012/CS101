@@ -3,6 +3,7 @@
 - [x] [Mảng (Array)](#m%E1%BA%A3ng-array)
 - [x] [Mảng hai chiều (2D array)](#m%E1%BA%A3ng-hai-chi%E1%BB%81u-2d-array)
 - [x] [Vòng lặp `for`](#v%C3%B2ng-l%E1%BA%B7p-for)
+- [x] Thuật toán tìm số lớn nhất
 
 ## Tài nguyên
 
@@ -69,4 +70,32 @@ for gia_tri in trials:
 	tong += gia_tri
 tbc = tong / len(trials)
 print(tbc)
+```
+
+## Thuật toán tìm số lớn nhất
+
+- Ý tưởng:
+	- dùng một biến `so_lon_nhat` để lưu giá trị đầu tiên của mảng.
+	- dùng vòng lặp `for` hoặc `while` đi qua các phần tử của mảng, nếu gặp phần tử lớn hơn `so_lon_nhat` thì đặt lại giá trị của `so_lon_nhat` bằng phần tử này.
+	- kết thúc vòng lặp, biến `so_lon_nhat` sẽ chứa giá trị lớn nhất của mảng.
+- Thuật toán sử dụng vòng lặp `for`
+```Python
+mang = [1, 4, 8, 12, 3, 5]
+so_lon_nhat = mang[0]
+for phan_tu in mang:
+	if phan_tu > so_lon_nhat:
+		so_lon_nhat = phan_tu
+print(so_lon_nhat)
+```
+- Thuật toán sử dụng vòng lặp `while`
+```Python
+mang = [1, 4, 8, 12, 3, 5]
+so_lon_nhat = mang[0]
+index = 0
+while index < len(mang):
+	phan_tu = mang[index]
+	if phan_tu > so_lon_nhat:
+		so_lon_nhat = phan_tu
+	index += 1
+print(so_lon_nhat)
 ```
