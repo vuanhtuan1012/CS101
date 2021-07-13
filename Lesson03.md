@@ -27,8 +27,8 @@ Nếu coi biến giống như một chiếc hộp chứa dữ liệu thì mảng
 ### Khởi tạo
 
 - Cú pháp: `tên_mảng = [danh_sách_các_phần_tử]`
-	- `danh_sách_các_phần_tử` là chuỗi các phần tử được phân tách nhau bằng dấu phẩy `,`. Ví dụ: `1, 2, 3, 4`
-	- nếu không đưa vào `danh_sách_các_phần_tử` chúng ta sẽ có một mảng trống, không chứa phần tử nào.
+    - `danh_sách_các_phần_tử` là chuỗi các phần tử được phân tách nhau bằng dấu phẩy `,`. Ví dụ: `1, 2, 3, 4`
+    - nếu không đưa vào `danh_sách_các_phần_tử` chúng ta sẽ có một mảng trống, không chứa phần tử nào.
 - **Chú ý:** `danh_sách_các_phần_tử` được đặt giữa cặp ngoặc vuông `[]`.
 
 ```Python
@@ -55,12 +55,12 @@ mang[4] # error IndexError
 ### Phương thức và Hàm
 
 - `append()` : phương thức thêm phần tử vào cuối mảng.
-	- Cú pháp:  `tên_mảng.append(phần_tử)`. 
-	- **Chú ý:** có dấu chấm `.` giữa `tên_mảng` và `append`.
-	- Ví dụ: `mang.append(5)` thêm phần tử `5` vào cuối mảng `mang`.
+    - Cú pháp:  `tên_mảng.append(phần_tử)`.
+    - **Chú ý:** có dấu chấm `.` giữa `tên_mảng` và `append`.
+    - Ví dụ: `mang.append(5)` thêm phần tử `5` vào cuối mảng `mang`.
 - `len()`: hàm đếm số phần tử của mảng.
-	- Cú pháp: `len(tên_mảng)`.
-	- Ví dụ: `len(mang)` trả về 4 là tổng số phần tử trong mảng `mang`.
+    - Cú pháp: `len(tên_mảng)`.
+    - Ví dụ: `len(mang)` trả về 4 là tổng số phần tử trong mảng `mang`.
 
 ```Python
 mang = [] # khởi tạo mảng trống
@@ -93,36 +93,36 @@ Vòng lặp `for` dùng để duyệt qua tất cả các phần tử của mả
 - Cấu trúc:
 ```Python
 for phần_tử in tên_mảng:
-	mã_lệnh_1
-	mã_lệnh_2
-	...
+    mã_lệnh_1
+    mã_lệnh_2
+    ...
 ```
 - Thực thi: vòng lặp `for` sẽ đi qua từng phần tử trong mảng theo đúng số thứ tự của các phần tử.
 - Ví dụ dưới dây sẽ in ra các phần tử trong mảng `mang` theo đúng thứ tự của chúng trong mảng.
 ```Python
 mang = [80, 85, 87]
 for phan_tu in mang:
-	print(phan_tu)
+    print(phan_tu)
 ```
 
 **Vòng lặp `for` cũng được dùng để duyệt qua các kí tự của một chuỗi kí tự**.
 ```Python
 ho_ten = "Vũ Khánh Chi"
 for ki_tu in ho_ten:
-	print(ki_tu)
+    print(ki_tu)
 ```
 
 ## Thuật toán tính tổng
 
 - Ý tưởng:
-	- khởi tạo biến `tong = 0` để lưu tổng các phần tử trong mảng
-	- dùng vòng lặp `for` duyệt qua các phần tử trong mảng. Mỗi khi gặp một phần tử, ta sẽ cộng thêm phần tử đó vào mảng.
+    - khởi tạo biến `tong = 0` để lưu tổng các phần tử trong mảng
+    - dùng vòng lặp `for` duyệt qua các phần tử trong mảng. Mỗi khi gặp một phần tử, ta sẽ cộng thêm phần tử đó vào mảng.
 - Thuật toán
 ```Python
 mang = [80, 85, 87]
 tong = 0
 for phan_tu in mang:
-	tong += phan_tu
+    tong += phan_tu
 print(tong)
 ```
 - Mở rộng **tính trung bình cộng**: sau khi tìm được tổng ta chia cho tổng số phần tử sẽ được trung bình cộng của mảng.
@@ -130,7 +130,7 @@ print(tong)
 mang = [80, 85, 87]
 tong = 0
 for phan_tu in mang:
-	tong += phan_tu
+    tong += phan_tu
 tbc = tong / len(mang)
 print(tbc)
 ```
@@ -138,16 +138,16 @@ print(tbc)
 ## Thuật toán tìm số lớn nhất
 
 - Ý tưởng:
-	- dùng một biến `so_lon_nhat` để lưu giá trị đầu tiên của mảng.
-	- dùng vòng lặp `for` hoặc `while` đi qua các phần tử của mảng, nếu gặp phần tử lớn hơn `so_lon_nhat` thì đặt lại giá trị của `so_lon_nhat` bằng phần tử này.
-	- kết thúc vòng lặp, biến `so_lon_nhat` sẽ chứa giá trị lớn nhất của mảng.
+    - dùng một biến `so_lon_nhat` để lưu giá trị đầu tiên của mảng.
+    - dùng vòng lặp `for` hoặc `while` đi qua các phần tử của mảng, nếu gặp phần tử lớn hơn `so_lon_nhat` thì đặt lại giá trị của `so_lon_nhat` bằng phần tử này.
+    - kết thúc vòng lặp, biến `so_lon_nhat` sẽ chứa giá trị lớn nhất của mảng.
 - Thuật toán sử dụng vòng lặp `for`
 ```Python
 mang = [1, 4, 8, 12, 3, 5]
 so_lon_nhat = mang[0]
 for phan_tu in mang:
-	if phan_tu > so_lon_nhat:
-		so_lon_nhat = phan_tu
+    if phan_tu > so_lon_nhat:
+        so_lon_nhat = phan_tu
 print(so_lon_nhat)
 ```
 - Thuật toán sử dụng vòng lặp `while`
@@ -156,9 +156,9 @@ mang = [1, 4, 8, 12, 3, 5]
 so_lon_nhat = mang[0]
 index = 0
 while index < len(mang):
-	phan_tu = mang[index]
-	if phan_tu > so_lon_nhat:
-		so_lon_nhat = phan_tu
-	index += 1
+    phan_tu = mang[index]
+    if phan_tu > so_lon_nhat:
+        so_lon_nhat = phan_tu
+    index += 1
 print(so_lon_nhat)
 ```
