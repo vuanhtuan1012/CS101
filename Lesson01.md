@@ -24,24 +24,24 @@
 ### Các hàm Python
 
 - `ord()`: trả về mã unicode của 1 kí tự bất kì
-	- input: 1 kí tự
-	- output: mã unicode của kí tự đó
+    - input: 1 kí tự
+    - output: mã unicode của kí tự đó
 ```Python
 ord('A')
 # return 65
 ```
 
 - `char()`: trả về kí tự của mã unicode
-	- input: 1 số nguyên
-	- output: kí tự unicode
+    - input: 1 số nguyên
+    - output: kí tự unicode
 ```Python
 chr(65)
 # return 'A'
 ```
 
 - `bin()`: chuyển một số nguyên sang hệ cơ số 2
-	- input: 1 số nguyên
-	- output: biểu diễn của số nguyên đó trong hệ cơ số 2
+    - input: 1 số nguyên
+    - output: biểu diễn của số nguyên đó trong hệ cơ số 2
 ```Python
 bin(7)
 # return '0b111'
@@ -53,8 +53,8 @@ bin(7)
 ```
 
 - `int()`: chuyển một chuỗi từ hệ nhị phân (cơ số 2) sang hệ thập phân (cơ số 10)
-	- input: cần 2 giá trị: chuỗi cần chuyển và hệ cơ số của chuỗi đó
-	- output: số nguyên trong hệ thập phân
+    - input: cần 2 giá trị: chuỗi cần chuyển và hệ cơ số của chuỗi đó
+    - output: số nguyên trong hệ thập phân
 ```Python
 int('111', 2)
 # return 7

@@ -23,18 +23,18 @@ input("Bạn tên là gì? ")
 
 - Biến (variable) dùng để chứa dữ liệu.
 - Tên biến:
-	- là tổ hợp của các kí tự chữ cái, số và dấu gạch dưới \_.
-	- phải bắt đầu bằng chữ cái hoặc dấu gạch dưới \_.
+    - là tổ hợp của các kí tự chữ cái, số và dấu gạch dưới \_.
+    - phải bắt đầu bằng chữ cái hoặc dấu gạch dưới \_.
 - Phép gán **=** dùng để đưa dữ liệu vào biến.
 ```Python
 x = 5
 name = input("Bạn tên là gì? ")
 ```
 - Các kiểu dữ liệu (data types):
-	- `int` : kiểu số nguyên, gồm các số nguyên. Ví dụ: 1, 2, 3, -1, -3, etc.
-	- `float` : kiểu số thực, gồm các số thực. Ví dụ: 1.0, 2.0, 3.5, -1.5, etc.
-	- `str` : kiểu chuỗi kí tự, gồm các chuỗi kí tự. Ví dụ: "2021", "1.5", "Bạn tên là gì? ", etc.
-	- `bool`: kiểu logic, gồm 2 giá trị `True` (đúng) và `False` (sai).
+    - `int` : kiểu số nguyên, gồm các số nguyên. Ví dụ: 1, 2, 3, -1, -3, etc.
+    - `float` : kiểu số thực, gồm các số thực. Ví dụ: 1.0, 2.0, 3.5, -1.5, etc.
+    - `str` : kiểu chuỗi kí tự, gồm các chuỗi kí tự. Ví dụ: "2021", "1.5", "Bạn tên là gì? ", etc.
+    - `bool`: kiểu logic, gồm 2 giá trị `True` (đúng) và `False` (sai).
 - `type()` : dùng để kiểm tra kiểu dữ liệu
 ```Python
 type(5)
@@ -79,17 +79,17 @@ float(False) # return 0.0
 - Cú pháp
 ```Python
 if điều_kiện:
-	mã_lệnh_nếu_điều_kiện_đúng
+    mã_lệnh_nếu_điều_kiện_đúng
 else:
-	mã_lệnh_nếu_điều_kiện_sai
+    mã_lệnh_nếu_điều_kiện_sai
 ```
 - Các phép toán so sánh:
-	- **==**: bằng nhau. Kiểm tra 2 vế có giống nhau hay không?
-	- **!=**: khác nhau. Kiểm tra 2 vế có khác nhau hay không?
-	- **>**: lớn hơn. Vế trái lớn hơn vế phải?
-	- **>=**: lớn hơn hoặc bằng. Vế trái lớn hơn hoặc bằng vế phải?
-	- **<**: nhỏ hơn. Vế trái nhỏ hơn vế phải?
-	- **<=**: nhỏ hơn hoặc bằng. Vế trái nhỏ hơn hoặc bằng vế phải?
+    - **==**: bằng nhau. Kiểm tra 2 vế có giống nhau hay không?
+    - **!=**: khác nhau. Kiểm tra 2 vế có khác nhau hay không?
+    - **>**: lớn hơn. Vế trái lớn hơn vế phải?
+    - **>=**: lớn hơn hoặc bằng. Vế trái lớn hơn hoặc bằng vế phải?
+    - **<**: nhỏ hơn. Vế trái nhỏ hơn vế phải?
+    - **<=**: nhỏ hơn hoặc bằng. Vế trái nhỏ hơn hoặc bằng vế phải?
 - Các phép toán sẽ trả về dữ liệu kiểu logic (`bool`): `True` hoặc `False`.
 ```Python
 type(3 > 4)
@@ -99,45 +99,45 @@ type(3 > 4)
 ```Python
 # or
 if x == "1101" or x == "1001":
-	print("Welcome")
+    print("Welcome")
 else:
-	print("Wrong")
+    print("Wrong")
 
 # and
 if x > 3 and x < 8:
-	print("Welcome")
+    print("Welcome")
 else:
-	print("Wrong")
+    print("Wrong")
 ```
 - Rẽ nhánh
 ```Python
 if điều_kiện_1:
-	mã_lệnh_nếu_điều_kiện_1_đúng
+    mã_lệnh_nếu_điều_kiện_1_đúng
 elif điều_kiện_2:
-	mã_lệnh_nếu_điều_kiện_2_đúng
+    mã_lệnh_nếu_điều_kiện_2_đúng
 else:
-	mã_lệnh_nếu_điều_kiện_1_và_2_sai
+    mã_lệnh_nếu_điều_kiện_1_và_2_sai
 ```
 - Trong câu điều kiện chỉ có thể có 1 `if`, có nhiều nhất 1 `else`, và có thể có vô số `elif`.
 ```Python
 diem = input("Bạn được bao nhiêu điểm ? ")
 diem = float(diem)
 if diem >= 9:
-	print("học sinh xuất sắc")
+    print("học sinh xuất sắc")
 elif diem >=8:
-	print("học sinh giỏi")
+    print("học sinh giỏi")
 elif diem >= 6.5:
-	print("học sinh khá")
+    print("học sinh khá")
 else:
-	print("học sinh trung bình")
+    print("học sinh trung bình")
 ```
 
 ## Vòng lặp `while`
 - Cú pháp
 ```Python
 while điều_kiện_lặp:
-	mã_lệnh_1_nếu_điều_kiện_lặp_đúng
-	mã_lệnh_2_nếu_điều_kiện_lặp_đúng
+    mã_lệnh_1_nếu_điều_kiện_lặp_đúng
+    mã_lệnh_2_nếu_điều_kiện_lặp_đúng
 ```
 
 **Chú ý:** nếu điều kiện lặp luôn đúng, chương trình sẽ chạy không dừng. Vì vậy, trong vòng lặp luôn phải có lệnh để cập nhật điều kiện lặp.
@@ -146,8 +146,8 @@ while điều_kiện_lặp:
 # in ra 5 dòng Hello World
 counter = 0
 while counter < 5:
-	print("Hello World!")
-	counter += 1
+    print("Hello World!")
+    counter += 1
 ```
 
 - `counter += 1`: là cách viết ngắn gọn của `counter = counter + 1`
@@ -158,13 +158,13 @@ while counter < 5:
 # chương trình dừng sau 3 lần nhập mật khẩu sai
 counter = 0
 while counter < 3:
-	pwd = input("Mật khẩu của bạn là gì? ")
-	if pwd == "1101" or pwd == "0512":
-		print("Welcome")
-		break
-	else:
-		print("Wrong password!")
-		counter += 1
+    pwd = input("Mật khẩu của bạn là gì? ")
+    if pwd == "1101" or pwd == "0512":
+        print("Welcome")
+        break
+    else:
+        print("Wrong password!")
+        counter += 1
 ```
 
 Các toán tử mở rộng:
