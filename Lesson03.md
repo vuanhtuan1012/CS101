@@ -89,6 +89,8 @@ print(len(data)) # return 4
 
 ## Vòng lặp `for`
 
+> [Video bài giảng](https://youtu.be/mgOtiIuhJZc?t=5235) :  nên đặt tốc độ phát ở 1.25 hoặc 1.5
+
 Vòng lặp `for` dùng để duyệt qua tất cả các phần tử của mảng mà không cần đưa vào số thứ tự của chúng.
 - Cấu trúc:
 ```Python
