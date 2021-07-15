@@ -74,6 +74,8 @@ len(mang) # return 4
 
 ## Mảng hai chiều (2D Array)
 
+> [Video bài giảng](https://youtu.be/mgOtiIuhJZc?t=5962) :  nên đặt tốc độ phát ở 1.25 hoặc 1.5
+
 Một mảng có thể chứa các mảng khác. Khi đó ta có mảng hai chiều (2D array). Các hàm, phương thức của mảng cũng đúng với mảng hai chiều.
 
 ```Python
@@ -138,6 +140,8 @@ print(tbc)
 ```
 
 ## Thuật toán tìm số lớn nhất
+
+> [Video bài giảng](https://youtu.be/mgOtiIuhJZc?t=6293) :  nên đặt tốc độ phát ở 1.25 hoặc 1.5
 
 - Ý tưởng:
     - dùng một biến `so_lon_nhat` để lưu giá trị đầu tiên của mảng.
