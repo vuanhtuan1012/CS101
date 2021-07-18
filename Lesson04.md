@@ -2,7 +2,7 @@
 
 > Thuật toán là một hướng dẫn **các bước cụ thể** để thực hiện một công việc nào đó.
 
-- [x] Tìm kiếm tuần tự (Linear Search): ý tưởng, sơ đồ thuật toán, cài đặt
+- [x] [Tìm kiếm tuần tự (Linear Search)](#t%C3%ACm-ki%E1%BA%BFm-tu%E1%BA%A7n-t%E1%BB%B1-linear-search): ý tưởng, sơ đồ thuật toán, cài đặt
 - [ ] Tìm kiếm nhị phân (Binary Search): ý tưởng, sơ đồ thuật toán, cài đặt
 - [ ] Hàm (Function)
 
@@ -16,8 +16,6 @@
 - [[SUM 21] CS 101 - Lucky Luke selection sorting](https://scratch.mit.edu/projects/481274546/)
 - [[SUM 21] CS 101 - Thầy ơi, thầy đi đâu thế! (Phiên bản sắp xếp)](https://scratch.mit.edu/projects/481099413/)
 - [Khái niệm Thuật toán](https://www.powtoon.com/embed/dC5wiRKAnKf/)
-
-## Tìm kiếm tuần tự (Linear Search)
 
 ## Tìm kiếm tuần tự (Linear Search)
 
