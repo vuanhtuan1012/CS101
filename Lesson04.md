@@ -3,7 +3,7 @@
 > Thuật toán là một hướng dẫn **các bước cụ thể** để thực hiện một công việc nào đó.
 
 - [x] [Tìm kiếm tuần tự (Linear Search)](#t%C3%ACm-ki%E1%BA%BFm-tu%E1%BA%A7n-t%E1%BB%B1-linear-search): ý tưởng, sơ đồ thuật toán, cài đặt
-- [ ] Tìm kiếm nhị phân (Binary Search): ý tưởng, sơ đồ thuật toán, cài đặt
+- [x] [Tìm kiếm nhị phân (Binary Search)](#t%C3%ACm-ki%E1%BA%BFm-nh%E1%BB%8B-ph%C3%A2n-binary-search): ý tưởng, sơ đồ thuật toán, cài đặt
 - [x] [Hàm (Function)](#h%C3%A0m-function): khái niệm, khai báo, sử dụng
 
 ## Tài nguyên
@@ -19,6 +19,8 @@
 
 ## Tìm kiếm tuần tự (Linear Search)
 
+> Tìm kiếm tuần tự (Linear Search) là thuật toán dùng để tìm giá trị trong một bộ dữ liệu (mảng) **bất kì**.
+
 ### Ý tưởng
 1. Đi qua từng phần tử trong mảng
 2. ___ Nếu giá trị của phần tử hiện tại = giá trị cần tìm thì:
@@ -30,11 +32,11 @@
 
 1. Sử dụng vòng lặp `while`
 
-![linear search using while](images/l4_linear_search_while.svg)
+![linear search workflow using while](images/l4_linear_search_while.svg)
 
 2. Sử dụng vòng lặp `for`
 
-![linear search using for](images/l4_linear_search_for.svg)
+![linear search workflow using for](images/l4_linear_search_for.svg)
 
 ### Cài đặt
 
@@ -64,6 +66,43 @@ for phan_tu in mang:
 if found == False:
     print("not found")
 ```
+
+## Tìm kiếm nhị phân (Binary Search)
+
+> Tìm kiếm nhị phân (Binary Search) là thuật toán dùng để tìm một giá trị trong một bộ dữ liệu (mảng) **đã được sắp xếp**.
+
+### Ý tưởng
+1. Nếu giá trị của phần tử ở giữa mảng = giá trị cần tìm thì:
+2. ___ In ra màn hình "đã tìm được". Đi đến bước 9
+3. Ngược lại:
+4. ___ Nếu giá trị của phần tử ở giữa mảng > giá trị cần tìm thì:
+5. ______ Quay lại bước 1 và thực hiện tìm trong nửa đầu của mảng.
+6. ___ Ngược lại:
+7. ______ Quay lại bước 1 và thực hiện tìm trong nửa sau của mảng.
+8. In ra màn hình "không tìm được".
+9. Kết thúc
+
+### Sơ đồ thuật toán
+
+![binary search workflow](images/l4_binary_search.svg)
+
+### Cài đặt
+```Python
+found = False
+while len(mang) > 0:
+    index = len(mang) // 2
+    if mang[index] == so_can_tim:
+        found = True
+        print("found it")
+        break
+    else:
+        if mang[index] > so_can_tim:
+            mang = mang[:index]
+        else:
+            mang = mang[index+1:]
+if found == False:
+    print("not found")
+``` 
 
 ## Hàm (Function)
 
