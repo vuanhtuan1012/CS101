@@ -110,7 +110,7 @@ if found == False:
 
 > Hàm là một khối lệnh được đặt tên (gọi là tên hàm) dùng để thực hiện một công việc nào đó.
 
-- Hàm có thể có hoặc không yêu cầu các dữ liệu đầu vào (input). Dữ liệu được đưa vào hàm thông qua các biến. Các biến này được gọi làm **tham số** của hàm.
+- Hàm có thể có hoặc không yêu cầu các dữ liệu đầu vào (input). Dữ liệu được đưa vào hàm thông qua các biến. Các biến này được gọi làm **tham số** (parameters) của hàm.
 
 ```Python
 # hàm không yêu cầu tham số
@@ -164,7 +164,7 @@ def tinh_tong(a, b):
 
 ### Sử dụng
 
-Để sử dụng hàm ta chỉ cần gọi tên hàm và truyền vào các giá trị của tham số nếu có. Giá trị của tham số truyền vào được gọi là **đối số**.
+Để sử dụng hàm ta chỉ cần gọi tên hàm và truyền vào các giá trị của tham số nếu có. Giá trị của tham số truyền vào được gọi là **đối số** (arguments).
 
 Ví dụ để sử dụng hàm tính tổng ở trên để tính tổng của hai số 5 và 3 ta dùng câu lệnh `tinh_tong(5, 3)`.
 - Câu lệnh này sẽ trả về 8 là tổng của 5 và 3.
