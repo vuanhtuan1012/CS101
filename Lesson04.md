@@ -46,10 +46,12 @@
 found = False
 index = 0
 while index < len(mang):
+    print("Thử số: ", mang[index])
     if mang[index] == so_can_tim:
         found = True
         print("found it")
         break
+    index += 1
 if found == False:
     print("not found")
 ```
@@ -59,6 +61,7 @@ if found == False:
 ```Python
 found = False
 for phan_tu in mang:
+    print("Thử số: ", phan_tu)
     if phan_tu == so_can_tim:
         found = True
         print("found it")
@@ -91,6 +94,7 @@ if found == False:
 found = False
 while len(mang) > 0:
     index = len(mang) // 2
+    print("Thử số: ", mang[index])
     if mang[index] == so_can_tim:
         found = True
         print("found it")
