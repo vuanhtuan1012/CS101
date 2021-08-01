@@ -6,7 +6,7 @@
 - [x] [Bài 4: Cỗ Máy Tìm Kiếm](Lesson04.md)
 - [ ] Bài 5: Bài Học Ngoại Khoá
 - [x] [Bài 6: Ai Sẽ Nhận Vaccine Trước](Lesson06.md)
-- [ ] Bài 7: Giải Mã Mê Cung
+- [ ] [Bài 7: Giải Mã Mê Cung](Lesson07.md)
 - [ ] Bài 8: Khám Phá Thế Giới Đối Tượng
 - [ ] Bài 9: Dự án đặc biệt - Cùng Xoay Theo Điệu Nhạc
 - [ ] Bài 10: Dự án cuối khoá phần 1
