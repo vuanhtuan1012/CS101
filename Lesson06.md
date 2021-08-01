@@ -104,10 +104,14 @@ with open("applicants.csv", "r") as file_reader:
 1. Đọc file `applicants.csv`, lưu thông tin tất cả các ứng viên vào mảng `applicants`. (đoạn code trên đã thực hiện việc này).
 2. Lấy ra tất cả các ứng viên đến từ TP. HCM
     - Khởi tạo mảng `applicants_HCM`.
-    - Đi qua các phần tử (ứng viên) của mảng `applicants`.
-        - Với mỗi ứng viên ta cần tìm thành phố của ứng viên đó
+    - Đi qua các phần tử (ứng viên) của mảng `applicants`:
+        - Với mỗi ứng viên ta cần tìm thành phố của ứng viên đó,
         - sau đó kiểm tra nếu thành phố là `TP Ho Chi Minh` thì thêm ứng viên đó vào mảng `applicants_HCM`.
 3. Lấy ra 20 ứng viên đầu tiên trong mảng `applicants_HCM`
+    - Khởi tạo mảng `first_20_HCM`.
+    - Đi qua từng phần tử (ứng viên) trong mảng `applicants_HCM`:
+        - thêm ứng viên vào mảng `first_20_HCM`.
+        - kiểm tra số phần tử trong mảng `first_20_HCM`, nếu đủ 20 thì dừng lại.
 
 Đoạn code dưới đây sẽ thực hiện việc 2 và 3.
 
@@ -120,14 +124,27 @@ for applicant in applicants:
         applicants_HCM.append(applicant)
 
 # lay ra 20 ung vien dau tien
+for applicant in applicants_HCM:
+    first_20_HCM.append(applicant)
+    if len(first_20_HCM) == 20:
+        break
+```
+
+- Ở dòng số 3 `city = applicant.split(",")[1]`, đầu tiên ta dùng phương thức `split()` để tách chuỗi gồm tên và thành phố của ứng viên thành mảng 2 phần tử, sau đó lấy phần tử thứ hai của mảng (index = 1) lưu vào biến `city`.
+
+**Ngoài ra,** ta cũng có thể dùng câu lệnh `applicants_HCM[:20]` để lấy về 20 phần tử đầu tiên của mảng `applicants_HCM`, sau đó ta lưu chúng vào biến `first_20_HCM` thông qua phép gán `=`.
+
+```Python
+# lay ra 20 ung vien dau tien
 first_20_HCM = applicants_HCM[:20]
 ```
 
-- Dòng số 3: `city = applicant.split(",")[1]` đầu tiên ta dùng phương thức `split()` để tách chuỗi gồm tên và thành phố của ứng viên thành mảng, sau đó lấy phần tử thứ hai của mảng (index = 1) lưu vào biến `city`.
-- Ở dòng số 7: `applicants_HCM[:20]` trả về 20 phần tử đầu tiên của mảng `applicants_HCM`, sau đó ta lưu chúng vào biến `first_20_HCM` thông qua phép gán `=`.
-- **!!! Chú ý !!!** Dòng số 7 sẽ gây lỗi nếu mảng `applicants_HCM` có ít hơn 20 ứng viên. Để tránh lỗi này ta thường dùng câu điều kiện như sau
+**Tuy nhiên,** câu lệnh `applicants_HCM[:20]` **sẽ gây lỗi nếu mảng `applicants_HCM` có ít hơn 20 phần tử**. Để tránh lỗi này ta chia bài toán thành hai trường hợp như sau:
+- Nếu mảng `applicants_HCM` có ít hơn 20 phần tử thì kết quả là toàn bộ mảng.
+- Nếu mảng `applicants_HCM` có từ 20 phần tử trở lên thì sử dụng câu lệnh `applicants_HCM[:20]`.
 
 ```Python
+# lay ra 20 ung vien dau tien
 if len(applicants_HCM) < 20:
     first_20_HCM = applicants_HCM
 else:

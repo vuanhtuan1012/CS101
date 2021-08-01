@@ -15,6 +15,13 @@ for applicant in applicants:
         applicants_HCM.append(applicant)
 
 # lay ra 20 ung vien dau tien
+## cach 1
+first_20_HCM = []
+for applicant in applicants_HCM:
+    first_20_HCM.append(applicant)
+    if len(first_20_HCM) == 20:
+        break
+## cach 2
 if len(applicants_HCM) < 20:
     first_20_HCM = applicants_HCM
 else:
