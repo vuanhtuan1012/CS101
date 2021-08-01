@@ -1,9 +1,9 @@
 # Bài 6: Ai Sẽ Nhận Vaccine Trước
 
-- [x] Lưu trữ dữ liệu: ổ cứng (HDD, SSD), RAM
-- [x] Đọc dữ liệu từ ổ cứng: open(), readlines()
-- [x] Ghi dữ liệu vào ổ cứng: open(), write()
-- [x] Phạm vi (Scope): local variable, global variable
+- [x] [Lưu trữ dữ liệu](#l%C6%B0u-tr%E1%BB%AF-d%E1%BB%AF-li%E1%BB%87u): ổ cứng (HDD, SSD), RAM
+- [x] [Đọc dữ liệu từ ổ cứng](#%C4%91%E1%BB%8Dc-d%E1%BB%AF-li%E1%BB%87u-t%E1%BB%AB-%E1%BB%95-c%E1%BB%A9ng): open(), readlines()
+- [x] [Ghi dữ liệu vào ổ cứng](#ghi-d%E1%BB%AF-li%E1%BB%87u-v%C3%A0o-%E1%BB%95-c%E1%BB%A9ng): open(), write()
+- [x] [Phạm vi (Scope)](#ph%E1%BA%A1m-vi-scope): local variable, global variable
 
 ## Tài nguyên
 
