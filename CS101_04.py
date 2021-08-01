@@ -86,29 +86,29 @@ who_is_winner(["Trau", "William", "Trau", "William", "William"])
 
 #### BTNC
 def favorite_song(songs, votes):
-    so_binh_chon = []
-    # khoi tao mang so_binh_chon
+    counters = []
+    # khoi tao mang counters
     for bai_hat in songs:
-        so_binh_chon.append(0)
+        counters.append(0)
     
     # dem so binh chon cua tung bai hat
-    # luu vao mang so_binh_chon
+    # luu vao mang counters
     for bai_hat in votes:
         index = 0
         # tim index cua bai hat trong mang songs
         while index < len(songs):
             if songs[index] == bai_hat:
-                so_binh_chon[index] += 1
+                counters[index] += 1
                 break
             index += 1
     
-    # tim index cua so lon nhat trong mang so_binh_chon
+    # tim index cua so lon nhat trong mang counters
     index = 0
-    sln = so_binh_chon[0]
+    sln = counters[0]
     index_sln = 0
-    while index < len(so_binh_chon):
-        if sln < so_binh_chon[index]:
-            sln = so_binh_chon[index]
+    while index < len(counters):
+        if sln < counters[index]:
+            sln = counters[index]
             index_sln = index
         index += 1
     return songs[index_sln]
