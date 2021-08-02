@@ -204,7 +204,7 @@ file_writer.close()
 ```Python
 with open("first_20_HCM.txt", "w") as file_writer:
     for applicant in first_20_HCM:
-        file_write.write(applicant + "\n")
+        file_writer.write(applicant + "\n")
 ```
 - Phương thức `write()` dùng để ghi nội dung của biến vào trong file.
 - Ở dòng 3 ta phải `+ "\n"` vào biến `applicant` để xuống dòng.
