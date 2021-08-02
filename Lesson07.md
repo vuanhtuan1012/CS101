@@ -1,10 +1,10 @@
 # Bài 7: Giải Mã Mê Cung
 
-- [x] Tìm kiếm theo chiều sâu (DFS)
-- [ ] Cấu trúc dữ liệu: 
-	- [x] Ngăn xếp (stack)
-	- [x] Hàng đợi (queue)
-	- [ ] Từ điển (dictionary)
+- [x] [Tìm kiếm theo chiều sâu (DFS)](#1-t%C3%ACm-ki%E1%BA%BFm-theo-chi%E1%BB%81u-s%C3%A2u-depth-first-search)
+- [ ] Cấu trúc dữ liệu:
+    - [x] [Ngăn xếp (stack)](#21-ng%C4%83n-x%E1%BA%BFp-stack)
+    - [x] [Hàng đợi (queue)](#22-h%C3%A0ng-%C4%91%E1%BB%A3i-queue)
+    - [ ] Từ điển (dictionary)
 - [ ] Tìm kiếm theo chiều rộng (BFS)
 
 ## Tài nguyên
@@ -21,6 +21,7 @@
 ## 1. Tìm kiếm theo chiều sâu (Depth First Search)
 
 **Bài toán:** Chúng ta cần tìm đường đi **từ lối vào đến lối ra** của một mê cung như hình dưới.
+
 ![Maze](images/maze.jpg)
 
 **Ý tưởng:**
@@ -33,8 +34,8 @@
 1. Đến điểm xuất phát.
 2. Đánh số vị trí hiện tại. *(Các vị trí khác nhau sẽ được đánh số bởi các số khác nhau.)*
 3. Nhìn xung quanh theo thứ tự **trên - dưới - trái - phải** xem có **đường chưa đánh dấu** không?
-	- Nếu có, sang bước 4.
-	- Nếu không, sang bước 5.
+    - Nếu có, sang bước 4.
+    - Nếu không, sang bước 5.
 4. Đi sang ô tiếp theo, ghi lại số của ô vừa đứng vào hộp `đã-đi-qua`. Sau đó, quay lại bước 2.
 5. Lấy **số trên cùng** trong hộp `đã-đi-qua`, quay lại vị trí trong số đó. Sau đó, thực hiện bước 3.
 
@@ -47,8 +48,8 @@
 **Khái niệm:**
 - Ngăn xếp là một cấu trúc dữ liệu theo nguyên tắc thiết kế **vào sau ra trước** (Last In First Out - **LIFO**).
 - Ngăn xếp có hai thao tác chính:
-	- thêm phần tử vào ngăn xếp *(ở vị trí trên cùng)*, gọi là **push**.
-	- lấy phần tử *(ở vị trí trên cùng)* ra khỏi ngăn xếp, gọi là **pop**.
+    - thêm phần tử vào ngăn xếp *(ở vị trí trên cùng)*, gọi là **push**.
+    - lấy phần tử *(ở vị trí trên cùng)* ra khỏi ngăn xếp, gọi là **pop**.
 
 (xem [slide 84](https://docs.google.com/presentation/d/e/2PACX-1vRewSXmND2fH9BRe1t1W4hJmW2o8lIU-HLOSwwwyIQhRun3rLFHbYSoFieEXfiqRPaLmdPnsUz1YjQ-/embed?start=false&loop=false&delayms=3000&slide=id.gbfd97ff75c_0_15))
 
@@ -62,8 +63,8 @@
 **Khái niệm:**
 - Hàng đợi là một cấu trúc dữ liệu theo nguyên tắc thiết kế **vào trước ra trước** (First In First Out - **FIFO**)
 - Hàng đợi có hai thao tác chính:
-	- thêm phần tử vào hàng đợi (ở vị trí sau cùng), gọi là **enqueue**.
-	- lấy phần tử (ở vị trí đầu tiên) ra khỏi hàng đợi, gọi là **dequeue**.
+    - thêm phần tử vào hàng đợi (ở vị trí sau cùng), gọi là **enqueue**.
+    - lấy phần tử (ở vị trí đầu tiên) ra khỏi hàng đợi, gọi là **dequeue**.
 
 (xem [slide 110](https://docs.google.com/presentation/d/e/2PACX-1vRewSXmND2fH9BRe1t1W4hJmW2o8lIU-HLOSwwwyIQhRun3rLFHbYSoFieEXfiqRPaLmdPnsUz1YjQ-/embed?start=false&loop=false&delayms=3000&slide=id.gb840d41073_3_122))
 
@@ -71,3 +72,7 @@
 - Khởi tạo hàng đợi: `queue = []`
 - Thêm phần tử `item` vào hàng đợi (**enqueue**): `queue.append(item)`
 - Lấy phần tử *(ở vị trí đầu tiên)* ra khỏi hàng đợi (**dequeue**): `item = queue.pop(0)`
+
+### 2.3. Từ điển (Dictionary)
+
+## 3. Tìm kiếm theo chiều rộng (Breadth First Search)
