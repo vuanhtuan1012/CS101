@@ -71,7 +71,9 @@
 **Lập trình:**
 - Khởi tạo hàng đợi: `queue = []`
 - Thêm phần tử `item` vào hàng đợi (**enqueue**): `queue.append(item)`
-- Lấy phần tử *(ở vị trí đầu tiên)* ra khỏi hàng đợi (**dequeue**): `item = queue.pop(0)`
+- Lấy phần tử *(ở vị trí đầu tiên)* ra khỏi hàng đợi (**dequeue**):
+    - `item = queue.pop(0)` hoặc
+    - `item = queue[0]; queue.remove(item)`
 
 ### 2.3. Từ điển (Dictionary)
 
