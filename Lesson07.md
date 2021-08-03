@@ -4,8 +4,8 @@
 - [x] Cấu trúc dữ liệu:
     - [x] [Ngăn xếp (stack)](#21-ng%C4%83n-x%E1%BA%BFp-stack)
     - [x] [Hàng đợi (queue)](#22-h%C3%A0ng-%C4%91%E1%BB%A3i-queue)
-    - [x] Từ điển (dictionary)
-- [ ] Tìm kiếm theo chiều rộng (BFS)
+    - [x] [Từ điển (dictionary)](#23-t%E1%BB%AB-%C4%91i%E1%BB%83n-dictionary)
+- [ ] [Tìm kiếm theo chiều rộng (BFS)](#3-t%C3%ACm-ki%E1%BA%BFm-theo-chi%E1%BB%81u-r%E1%BB%99ng-breadth-first-search)
 
 ## Tài nguyên
 
