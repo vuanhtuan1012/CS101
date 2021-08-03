@@ -58,6 +58,8 @@
 - Thêm phần tử `item` vào ngăn xếp (**push**): `stack.append(item)`
 - Lấy phần tử *(ở vị trí trên cùng)* ra khỏi ngăn xếp (**pop**): `item = stack.pop()`
 
+**!!! Chú ý !!!** Phương thức `pop()` sẽ trả về lỗi nếu `stack` rỗng.
+
 ### 2.2. Hàng đợi (Queue)
 
 **Khái niệm:**
@@ -74,6 +76,8 @@
 - Lấy phần tử *(ở vị trí đầu tiên)* ra khỏi hàng đợi (**dequeue**):
     - `item = queue.pop(0)` hoặc
     - `item = queue[0]; queue.remove(item)`
+    
+**!!! Chú ý !!!** Phương thức `remove()` cần một giá trị đầu vào, `item` và sẽ trả về lỗi nếu `item` không có trong `queue`.
 
 ### 2.3. Từ điển (Dictionary)
 
@@ -94,6 +98,15 @@ profile = {
 
 **Lập trình:**
 - Khởi tạo: `tên_biến_từ_điển = {khoá_1 : giá_trị_1, khoá_2: giá_trị_2}`.
-- Truy cập một giá trị (value) của khoá (key) trong từ điển: `tên_biến_từ_điển[khoá]`. Ví dụ: trong biến từ điển `profile` ở trên `profile["name"]` trả về giá trị "Chi" là một chuỗi, `profile["grade"]` trả về giá trị 7 là một số nguyên.
+- Truy cập một giá trị (value) của khoá (key) trong từ điển: `tên_biến_từ_điển[khoá]`.
+
+Ví dụ: trong biến từ điển `profile` ở trên.
+
+```Python
+profile["name"]  # Chi
+profile["grade"]  # 7
+profile["cities"].append("Bac Giang")
+profile["cities"]  # "Ha Noi", "Thai Binh", "Bac Giang"
+```
 
 ## 3. Tìm kiếm theo chiều rộng (Breadth First Search)
