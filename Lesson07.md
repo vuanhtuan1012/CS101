@@ -14,7 +14,7 @@
 - [[Lesson 7] Final slide](https://docs.google.com/presentation/d/e/2PACX-1vRewSXmND2fH9BRe1t1W4hJmW2o8lIU-HLOSwwwyIQhRun3rLFHbYSoFieEXfiqRPaLmdPnsUz1YjQ-/embed?start=false&loop=false&delayms=3000&slide=id.gc1c2dc763d_1_0)
 - [[SUM 21] CS101 - Trẩu và Tre ở sân bay](https://scratch.mit.edu/projects/556876796/)
 - [[SUM 21] CS101 - Giải mã mê cung manual](https://scratch.mit.edu/projects/493904924/)
-- [[SUM 21] CS101 - Giải mã mê cung](https://scratch.mit.edu/projects/493741831/)
+- [[SUM 21] CS101 - Giải mã mê cung](https://scratch.mit.edu/projects/493741831/): DFS, BFS
 - [[Lesson 7] Hướng dẫn cài đặt Pygame trên Thonny](https://www.youtube.com/watch?v=fSvHeLfE9yY)
 - [[Lesson 7] Tóm tắt nội dung bài học](https://www.youtube.com/watch?v=ICsYgywXVwA)
 
