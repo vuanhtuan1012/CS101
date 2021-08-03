@@ -1,10 +1,10 @@
 # Bài 7: Giải Mã Mê Cung
 
 - [x] [Tìm kiếm theo chiều sâu (DFS)](#1-t%C3%ACm-ki%E1%BA%BFm-theo-chi%E1%BB%81u-s%C3%A2u-depth-first-search)
-- [ ] Cấu trúc dữ liệu:
+- [x] Cấu trúc dữ liệu:
     - [x] [Ngăn xếp (stack)](#21-ng%C4%83n-x%E1%BA%BFp-stack)
     - [x] [Hàng đợi (queue)](#22-h%C3%A0ng-%C4%91%E1%BB%A3i-queue)
-    - [ ] Từ điển (dictionary)
+    - [x] Từ điển (dictionary)
 - [ ] Tìm kiếm theo chiều rộng (BFS)
 
 ## Tài nguyên
@@ -76,5 +76,24 @@
     - `item = queue[0]; queue.remove(item)`
 
 ### 2.3. Từ điển (Dictionary)
+
+**Khái niệm:**
+- Từ điển là một cấu trúc dữ liệu gồm các cặp khoá (**key**) và giá trị (**value**) được phân cách bởi dấu phẩy **,** và đặt trong đấu ngoặc kép **{}**.
+- Từ điển thường được dùng để lưu các dữ liệu gồm nhiều thành phần thông tin như: bản ghi về học sinh, tình nguyện viên, etc.
+- Các khoá trong từ điển là duy nhất, chúng không thể trùng nhau.
+
+Ví dụ:
+```Python
+profile = {
+    "name": "Chi",
+    "job": "Hoc sinh",
+    "grade": 7,
+    "cities": ["Ha Noi", "Thai Binh"]
+}
+```
+
+**Lập trình:**
+- Khởi tạo: `tên_biến_từ_điển = {khoá_1 : giá_trị_1, khoá_2: giá_trị_2}`.
+- Truy cập một giá trị (value) của khoá (key) trong từ điển: `tên_biến_từ_điển[khoá]`. Ví dụ: trong biến từ điển `profile` ở trên `profile["name"]` trả về giá trị "Chi" là một chuỗi, `profile["grade"]` trả về giá trị 7 là một số nguyên.
 
 ## 3. Tìm kiếm theo chiều rộng (Breadth First Search)
