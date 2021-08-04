@@ -41,7 +41,9 @@
 
 **Cài đặt:** [DFS.py*](DFS.py), [L7_DFS.py](L7_DFS.py), [L7_DFS_Turtle.py](L7_DFS_Turtle.py)
 
-**Nhận xét:** Nếu mê cung có lối ra, thuật toán DFS sẽ **luôn tìm được** lối ra.
+**Nhận xét:**
+- Nếu mê cung có lối ra, thuật toán DFS sẽ **luôn tìm được** lối ra.
+- Nếu mê cung có nhiều lối ra, thuật toán DFS **chỉ tìm được một lối ra**, và **không biết** được đó là đường đi dài nhất hay ngắn nhất.
 
 ## 2. Cấu trúc dữ liệu
 
@@ -112,3 +114,9 @@ profile["cities"]  # "Ha Noi", "Thai Binh", "Bac Giang"
 ```
 
 ## 3. Tìm kiếm theo chiều rộng (Breadth First Search)
+
+**Cài đặt:** [BFS.py*](BFS.py)
+
+**Nhận xét:** Giống như DFS, thuật toán BFS:
+- **luôn tìm được** lối ra, nếu mê cung có lối ra.
+- **chỉ tìm được một lối ra**, và **không biết** được đó là đường đi dài nhất hay ngắn nhất.

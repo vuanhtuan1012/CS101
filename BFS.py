@@ -42,26 +42,27 @@ def get_neighbors(x, y):
     phai = [x, y+1]
     return [tren, duoi, trai, phai]
 
-def DFS(maze):
+def BFS(maze):
     bat_dau = get_start(maze)
     ket_thuc = get_end(maze)
     n, m = len(maze), len(maze[0])
-    stack = [bat_dau]
+    queue = [bat_dau]
     da_di = []
     cha = dict()
-    while stack:
-        x, y = stack.pop()  # o hien tai
+    while queue:
+        x, y = queue.pop(0)  # o hien tai
         da_di.append([x, y])
+        
         if [x, y] == ket_thuc:
             return da_di, cha
-        # them neighbors vao stack
+        # them neighbors vao queue
         for u, v in get_neighbors(x, y):
             if u < 0 or v < 0 or u >= n or v >=m:
                 continue
-            elif [u, v] in da_di or [u, v] in stack:
+            elif [u, v] in da_di or [u, v] in queue:
                 continue
             elif maze[u][v] != T:
-                stack.append([u, v])
+                queue.append([u, v])
                 uv = ",".join([str(u), str(v)])
                 xy = ",".join([str(x), str(y)]) 
                 cha[uv] = xy
@@ -126,8 +127,8 @@ maze = [
 
 print("Mê cung:\n")
 draw_maze(maze)
-da_di, cha = DFS(maze)
+da_di, cha = BFS(maze)
 duong_di = update_maze(maze, da_di, cha)
-print("Đường đi theo DFS:\n")
+print("Đường đi theo BFS:\n")
 draw_maze(maze)
 print("Độ dài đường đi:", len(duong_di))
