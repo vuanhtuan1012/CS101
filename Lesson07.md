@@ -39,6 +39,8 @@
 4. Đi sang ô tiếp theo, ghi lại số của ô vừa đứng vào hộp `đã-đi-qua`. Sau đó, quay lại bước 2.
 5. Lấy **số trên cùng** trong hộp `đã-đi-qua`, quay lại vị trí trong số đó. Sau đó, thực hiện bước 3.
 
+**Cài đặt:** [DFS.py*](DFS.py), [L7_DFS.py](L7_DFS.py), [L7_DFS_Turtle.py](L7_DFS_Turtle.py)
+
 **Nhận xét:** Nếu mê cung có lối ra, thuật toán DFS sẽ **luôn tìm được** lối ra.
 
 ## 2. Cấu trúc dữ liệu
