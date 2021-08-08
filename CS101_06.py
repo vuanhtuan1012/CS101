@@ -26,8 +26,8 @@ if len(applicants_HCM) < 20:
     first_20_HCM = applicants_HCM
 else:
     first_20_HCM = applicants_HCM[:20]
-    
-    
+
+
 #### Write file
 # ghi du lieu trong mang first_20_HCM vao file first_20_HCM.txt
 with open("frist_20_HCM.txt", "w") as file_writer:
@@ -147,7 +147,7 @@ def filter_random(array):
         thanh_pho = thong_tin[2].strip()
         if thanh_pho == "Hanoi":
             tro_giang_hn.append(tro_giang)
-    
+
     # tra ve 3 tro giang Ha Noi ngau nhien
     if len(tro_giang_hn) <= 3:
         return tro_giang_hn

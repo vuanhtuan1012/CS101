@@ -4,7 +4,7 @@ def sing_happy_birthday(name):
     print("Happy Birthday to You")
     print("Happy Birthday Dear " + name)
     print("Happy Birthday to You")
-    
+
 # command to test in shell
 sing_happy_birthday("Thuy")
 
@@ -90,7 +90,7 @@ def favorite_song(songs, votes):
     # khoi tao mang counters
     for bai_hat in songs:
         counters.append(0)
-    
+
     # dem so binh chon cua tung bai hat
     # luu vao mang counters
     for bai_hat in votes:
@@ -101,7 +101,7 @@ def favorite_song(songs, votes):
                 counters[index] += 1
                 break
             index += 1
-    
+
     # tim index cua so lon nhat trong mang counters
     index = 0
     sln = counters[0]

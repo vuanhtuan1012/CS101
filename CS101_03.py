@@ -37,8 +37,8 @@ for mang in trials:
 
 
 #### BTCB
-data = [[10, 62, 30, 65], 
-        [100, 100], 
+data = [[10, 62, 30, 65],
+        [100, 100],
         [86, 85, 87]]
 diems = []
 for vaccine in data:

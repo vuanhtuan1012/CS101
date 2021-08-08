@@ -64,13 +64,13 @@ def update_stack(stack, actions):
     def push(stack, value):
         stack.append(value)
         return stack
-    
+
     # dinh nghia ham pop
     def pop(stack):
         if len(stack) > 0:
             stack.pop()
         return stack
-    
+
     # di qua cac phan tu trong mang action
     index = 0
     while index < len(actions["action"]):
@@ -85,15 +85,15 @@ def update_stack(stack, actions):
 
 # commands to test
 stack = []
-actions = {'action': ['push', 'push'],  'book': ['Doraemon', 'Conan']} 
+actions = {'action': ['push', 'push'],  'book': ['Doraemon', 'Conan']}
 update_stack(stack, actions)
 
 stack = ['Doraemon', 'Conan', 'Lao Hac']
-actions = {'action': ['push', 'pop', 'push'],  'book': ['Truyen Kieu', None, 'Doraemon']} 
+actions = {'action': ['push', 'pop', 'push'],  'book': ['Truyen Kieu', None, 'Doraemon']}
 update_stack(stack, actions)
 
 stack = ['Doraemon']
-actions = {'action': ['push', 'pop', 'pop'],  'book': ['Conan', None, None]} 
+actions = {'action': ['push', 'pop', 'pop'],  'book': ['Conan', None, None]}
 update_stack(stack, actions)
 
 

@@ -12,7 +12,7 @@ print(tong)
 #### BTCB
 # Them thu vien de tao so ngau nhien
 import random
-        
+
 # answer la so ngau nhien tu 0 den 10 duoc may tinh tu dong sinh ra
 answer = random.randint(0, 10)  # lenh randint(0, 10) tra ve mot so tu 0 den 10
 print("To dang nghi den 1 so nguyen nam trong khoang 0 den 10.")
@@ -49,7 +49,7 @@ else:
     computer_choice = "bao"
 
 # Goi y:
-# so sanh du lieu nguoi dung nhap vao voi bien computer_choice:  
+# so sanh du lieu nguoi dung nhap vao voi bien computer_choice:
 # trong nhung truong hop nao thi may tinh va nguoi choi hoa nhau?
 # trong nhung truong hop nao thi nguoi choi thang?
 # trong nhung truong hop nao thi may tinh thang?
