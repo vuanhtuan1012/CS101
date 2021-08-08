@@ -6,7 +6,7 @@
 - [x] [Bài 4: Cỗ Máy Tìm Kiếm](Lesson04.md): tìm kiếm tuần tự, tìm kiếm nhị phân, hàm
 - [ ] Bài 5: Bài Học Ngoại Khoá
 - [x] [Bài 6: Ai Sẽ Nhận Vaccine Trước](Lesson06.md): đọc/ghi file, phạm vi của biến, thuật toán lọc mảng, lấy ra `n` phần tử trong mảng.
-- [ ] [Bài 7: Giải Mã Mê Cung](Lesson07.md): tìm kiếm theo chiều sâu (DFS), theo chiều rộng (BFS), ngăn xếp (stack), hàng đợi (queue), từ điển (dictionary).
+- [x] [Bài 7: Giải Mã Mê Cung](Lesson07.md): tìm kiếm theo chiều sâu (DFS), theo chiều rộng (BFS), ngăn xếp (stack), hàng đợi (queue), từ điển (dictionary).
 - [ ] [Bài 8: Khám Phá Thế Giới Đối Tượng](Lesson08.md): lớp (class), đối tượng (object)
 - [ ] Bài 9: Dự án đặc biệt - Cùng Xoay Theo Điệu Nhạc
 - [ ] Bài 10: Dự án cuối khoá phần 1

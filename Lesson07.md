@@ -5,7 +5,7 @@
     - [x] [Ngăn xếp (stack)](#21-ng%C4%83n-x%E1%BA%BFp-stack)
     - [x] [Hàng đợi (queue)](#22-h%C3%A0ng-%C4%91%E1%BB%A3i-queue)
     - [x] [Từ điển (dictionary)](#23-t%E1%BB%AB-%C4%91i%E1%BB%83n-dictionary)
-- [ ] [Tìm kiếm theo chiều rộng (BFS)](#3-t%C3%ACm-ki%E1%BA%BFm-theo-chi%E1%BB%81u-r%E1%BB%99ng-breadth-first-search)
+- [x] [Tìm kiếm theo chiều rộng (BFS)](#3-t%C3%ACm-ki%E1%BA%BFm-theo-chi%E1%BB%81u-r%E1%BB%99ng-breadth-first-search)
 
 ## Tài nguyên
 
@@ -24,22 +24,27 @@
 
 ![Maze](images/maze.jpg)
 
-**Ý tưởng:**
+**Ý tưởng:** ([slide 22](https://docs.google.com/presentation/d/e/2PACX-1vRewSXmND2fH9BRe1t1W4hJmW2o8lIU-HLOSwwwyIQhRun3rLFHbYSoFieEXfiqRPaLmdPnsUz1YjQ-/embed?start=false&loop=false&delayms=3000&slide=id.gc1079d7cf4_0_18))
 1. Chúng ta đi theo một nhánh cho đến khi tìm được đường ra hoặc hết đường.
 2. Nếu hết đường thì quay lại cho đến khi gặp nhánh mới, sau đó quay lại bước 1.
 
-(xem [slide 22](https://docs.google.com/presentation/d/e/2PACX-1vRewSXmND2fH9BRe1t1W4hJmW2o8lIU-HLOSwwwyIQhRun3rLFHbYSoFieEXfiqRPaLmdPnsUz1YjQ-/embed?start=false&loop=false&delayms=3000&slide=id.gc1079d7cf4_0_18))
+![DFS](images/dfs.gif)
 
 **Thuật toán DFS:**
 1. Đến điểm xuất phát.
-2. Đánh số vị trí hiện tại. *(Các vị trí khác nhau sẽ được đánh số bởi các số khác nhau.)*
-3. Nhìn xung quanh theo thứ tự **trên - dưới - trái - phải** xem có **đường chưa đánh dấu** không?
-    - Nếu có, sang bước 4.
-    - Nếu không, sang bước 5.
-4. Đi sang ô tiếp theo, ghi lại số của ô vừa đứng vào hộp `đã-đi-qua`. Sau đó, quay lại bước 2.
-5. Lấy **số trên cùng** trong hộp `đã-đi-qua`, quay lại vị trí trong số đó. Sau đó, thực hiện bước 3.
+2. Ghi vị trí hiện tại vào hộp `đã-đi-qua`. *(Các vị trí khác nhau sẽ được đánh dấu bởi các số khác nhau.)*
+3. Nhìn xung quanh theo thứ tự **trên - dưới - trái - phải** xem có **vị trí chưa đánh dấu** hay không?
+    - Nếu có, đưa (các) vị trí đó vào hộp `sẽ-đi`.
+4. Lấy ra **số trên cùng** (*được đưa vào cuối cùng*) trong hộp `sẽ-đi`, đi tới vị trí trong số đó. Sau đó, thực hiện bước 2.
+5. Thuật toán kết thúc khi đến được đích, hoặc không còn vị trí để đi đến (hộp `sẽ-đi` không còn phần tử nào để lấy ra).
 
-**Cài đặt:** [DFS.py*](DFS.py), [L7_DFS.py](L7_DFS.py), [L7_DFS_Turtle.py](L7_DFS_Turtle.py)
+**!!!Chú ý!!!** Vị trí chưa đánh dấu là vị trí:
+- có thể đi đến được.
+- chưa được lưu trong hộp `đã-đi-qua` và hộp `sẽ-đi`.
+
+**Cài đặt:**
+- Để cài đặt thuật toán BFS ta cần sử dụng cấu trúc dữ liệu [ngăn xếp (stack)](#21-ng%C4%83n-x%E1%BA%BFp-stack), vào trước ra sau.
+- Mã nguồn: [DFS.py*](DFS.py), [L7_DFS.py](L7_DFS.py), [L7_DFS_Turtle.py](L7_DFS_Turtle.py)
 
 **Nhận xét:**
 - Nếu mê cung có lối ra, thuật toán DFS sẽ **luôn tìm được** lối ra.
@@ -80,7 +85,7 @@
 - Lấy phần tử *(ở vị trí đầu tiên)* ra khỏi hàng đợi (**dequeue**):
     - `item = queue.pop(0)` hoặc
     - `item = queue[0]; queue.remove(item)`
-    
+
 **!!! Chú ý !!!** Phương thức `remove()` cần một giá trị đầu vào, `item` và sẽ trả về lỗi nếu `item` không có trong `queue`.
 
 ### 2.3. Từ điển (Dictionary)
@@ -115,7 +120,27 @@ profile["cities"]  # "Ha Noi", "Thai Binh", "Bac Giang"
 
 ## 3. Tìm kiếm theo chiều rộng (Breadth First Search)
 
-**Cài đặt:** [BFS.py*](BFS.py)
+**Ý tưởng:**
+1. Chúng ta đi đồng thời các nhánh (*cần có phép dịch chuyển tức thời của Songoku*) cho đến khi tìm được đường ra hoặc hết đường.
+2. Nếu hết đường nhánh nào hết đường thì không thử tiếp nữa.
+
+![BFS](images/bfs.gif)
+
+**Thuật toán BFS:**
+1. Đến điểm xuất phát.
+2. Ghi vị trí hiện tại vào hộp `đã-đi-qua`. *(Các vị trí khác nhau sẽ được đánh dấu bởi các số khác nhau.)*
+3. Nhìn xung quanh theo thứ tự **trên - dưới - trái - phải** xem có **vị trí chưa đánh dấu** không?
+    - Nếu có, đưa (các) vị trí đó vào hộp `sẽ-đi`.
+4. Lấy ra **số dưới cùng** (*được đưa vào đầu tiên*) trong hộp `sẽ-đi`, đi tới vị trí trong số đó. Sau đó, thực hiện bước 2.
+5. Thuật toán kết thúc khi đến được đích, hoặc không còn vị trí để đi đến (hộp `sẽ-đi` không còn phần tử nào để lấy ra).
+
+**!!!Chú ý!!!** Vị trí chưa đánh dấu là vị trí:
+- có thể đi đến được.
+- chưa được lưu trong hộp `đã-đi-qua` và hộp `sẽ-đi`.
+
+**Cài đặt:**
+- Để cài đặt thuật toán BFS ta cần sử dụng cấu trúc dữ liệu [hàng đợi (queue)](#22-h%C3%A0ng-%C4%91%E1%BB%A3i-queue), vào trước ra trước.
+- Mã nguồn: [BFS.py*](BFS.py)
 
 **Nhận xét:** Giống như DFS, thuật toán BFS:
 - **luôn tìm được** lối ra, nếu mê cung có lối ra.
