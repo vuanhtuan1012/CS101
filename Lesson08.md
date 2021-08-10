@@ -1,7 +1,7 @@
 # Bài 8: Khám Phá Thế Giới Đối Tượng
 
-- [x] Lập trình hướng đối tượng (object-oriented programming).
-- [x] Lớp (class): khái niệm, khai báo lớp, thuộc tính (attribute), phương thức (method), phân biệt phương thức và hàm.
+- [x] [Lập trình hướng đối tượng (object-oriented programming)](#l%E1%BA%ADp-tr%C3%ACnh-h%C6%B0%E1%BB%9Bng-%C4%91%E1%BB%91i-t%C6%B0%E1%BB%A3ng-object-oriented-programming).
+- [x] [Lớp (class)](#l%E1%BB%9Bp-class): khái niệm, khai báo lớp, thuộc tính (attribute), phương thức (method), phân biệt phương thức và hàm.
 
 ## Tài nguyên
 
@@ -24,7 +24,7 @@
 - Lớp sẽ cho biết đối tượng có các **thuộc tính** (attribute) và **phương thức** (method) nào.
 - Các đối tượng được tạo ra từ cùng một lớp là các vật **riêng biệt**. Do đó, thuộc tính của chúng có thể mang các giá trị khác nhau.
 
-### Khai báo một lớp trong Python
+### Khai báo một lớp
 
 ```Python
 class Tên_Lớp:
@@ -35,7 +35,7 @@ class Tên_Lớp:
 Trong đó:
 - `self` là từ khoá đặc biệt dùng để tham chiếu đến đối tượng mình đang tạo ra.
 - `__init__` là tên hàm đặc biệt dùng để khởi tạo đối tượng.
-- Các thuộc tính (nếu có) của lớp luôn được khởi tạo trong hàm `__init__`.
+- Các **thuộc tính** (nếu có) của lớp luôn được khởi tạo trong hàm `__init__`.
 
 Ví dụ dưới đây khai báo lớp `Player` có hai thuộc tính `x`, `y`. Sau đó khởi tạo 2 đối tượng `nc1` và `nc2` thuộc lớp `Player`.
 
