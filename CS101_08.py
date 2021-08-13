@@ -46,7 +46,7 @@ def compare_age(person1, person2):
         print(person1.name + " is older than " + person2.name)
     elif person1.age == person2.age:
         print(person1.name + " and " +
-              person2.name + " are the same age.")
+              person2.name + " are of the same age")
     else:
         print(person2.name + " is older than " + person1.name)
 
