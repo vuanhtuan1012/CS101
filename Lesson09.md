@@ -13,3 +13,4 @@
 - [[Lesson 9] Cột mốc 4: Định nghĩa các động tác](https://www.youtube.com/watch?v=id73XNqed9k)
 - [[Lesson 9] Cột mốc 5: Kết hợp nhiều động tác](https://www.youtube.com/watch?v=T1Kx15go-KI)
 - [[Lesson 9] Cột mốc 6: Điều khiển tốc độ thực hiện](https://www.youtube.com/watch?v=cLDFYag88Os)
+- [[Lesson 9] Arts](L9.zip)
